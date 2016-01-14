@@ -1,0 +1,196 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*-----*/
+/*  RESET RESET RESET RESET RESET RESET RESET  */
+/*-----*/
+
+
+body{
+    background:url("../img/gamebackground.jpg");
+    background-size: 100%;
+    overflow:hidden;
+    -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+
+
+
+#title{
+    font-size:78px;
+    color:white;
+    font-weight:bold;
+    font-family:Tahoma;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:392px;
+    margin-top:50px;
+    z-index:2;
+}
+
+#myCanvas {
+   margin: 180px auto;
+   display:block;
+   background-color:rgb(78, 78, 78);
+}
+
+#debugtext{
+    color:black;
+    position:absolute;
+}
+
+#latency{
+    color:black;
+    position:absolute;
+    top:0;
+}
+
+#shadowbackground{
+    height: 1080px;
+width: 1680px;
+position: absolute;
+z-index: 3;
+background: rgba(0,0,0,0.8);
+top: 0;
+left: 0;
+}
+
+.hidden{
+    display:none;
+}
+
+.show{
+    display:block;    
+}
+
+#pop{
+    width:200px;
+    /*height:100px;*/
+    background: rgba(0, 0, 0, 0.5);
+    border-radius:15px;
+    margin: 390px 0 0 740px;
+    padding:5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#pop p{
+    text-align:center;
+    color:white;
+    font-family: 'Fanwood Text', serif;
+}
+
+.newgame{
+    background: rgba(123, 123, 132, 0.5);
+    border:none;
+    outline:none;
+    border-radius:3px;
+    height:35px;
+    width:60px;
+    color:white;
+    font-size:12px;
+    font-weight:bold;
+    margin: 13px 0 0 70px;
+    z-index:9999;
+}
+
+.newgame:hover{
+    cursor:pointer;
+}
+
+#dead{
+    color:red !important;
+}
+
+#myCanvas{
+    box-shadow: 0px 0px 19px;
+border: 1px solid rgba(0, 0, 0, 0.61);   
+border-radius: 9px;
+}
+#myCanvas:focus{
+    outline:none;
+}
+
+#loadimg{    
+    /*position: fixed;*/
+/*left: 0px;*/
+/*top: 0px;*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*z-index: 1;*/
+/*background: url(../img/bg.gif) 50% 50% no-repeat #ede9df;*/
+}
+#sincos{
+    color:white;
+}
+
+#welcometext{
+
+}
+
+#playerName{
+   font-family:Tahoma;
+margin-left: 10px;
+font-size: 14px;
+padding: 0;
+margin-bottom: -7px;
+width:176px;
+
+}
+
+#nameerror{
+    color:red !important;
+}
+
+#button_dead{
+
+}
+
+#button_new{
+
+}
