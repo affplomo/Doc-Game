@@ -9,11 +9,11 @@
   <?php
   function init(){
     //create pdo and se up connection
-    $dsn      = 'mysql:host=localhost;dbname=doc_gameserver;';
-    $login    = 'root';
-    $password = '';
+    $dsn      = 'mysql:host=site1.local;dbname=docGame;';
+    $login    = 'homestead';
+    $password = 'secret';
     $options  = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'");
-
+    $pdo      = null;
     try {
         $pdo = new PDO($dsn, $login, $password, $options);
     } catch (PDOException $e) {
@@ -31,10 +31,9 @@
     $sql = "SELECT * FROM player;";
     $sth = $pdo->prepare($sql);
     $sth->execute();
-    $res = $sth->fetchAll();
-    print_r($res);
+    $res = $sth->fetchObject();
     foreach ($res as $key => $value) {
-      print_r("key $key val ");
+      print_r("$key = $value<br>");
     }
   }
 
